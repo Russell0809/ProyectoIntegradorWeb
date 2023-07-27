@@ -1,0 +1,22 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white !important;  
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;  /* Hace que el footer esté encima de otros elementos */
+}
+
+.recuadro-blanco {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  z-index: 1;  /* Hace que el recuadro blanco esté debajo del footer */
+}

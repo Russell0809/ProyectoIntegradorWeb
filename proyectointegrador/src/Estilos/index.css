@@ -1,0 +1,37 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+
+  /* Ajusta la imagen de fondo para que cubra todo el contenedor. */
+  background: url('../Imagenes/fondo.jpg') no-repeat center center fixed;
+
+  /* Asegúrate de que la imagen de fondo se estire para llenar el contenedor. */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  .title {
+    color: white;  /* Color de texto */
+    font-size: 5em;  /* Tamaño de texto, lo incrementamos a 5em */
+    text-align: center;  /* Centrado horizontalmente */
+    
+    /* Centrado verticalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* Añadimos un contorno negro alrededor del texto */
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+  }
